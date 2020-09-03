@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /src/main/java/applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 두 개의 bean 객체 -->
+<bean id="greeter" class="chap1.Greeter">
+	<property name="format" value="%s을  배웁니다." />
+</bean>
+<!-- MessageKr 클래스를 message 라는 이름의 객체로 받아옴 -->
+<bean id="message" class="chap1.MessageEn" />
+</beans>
